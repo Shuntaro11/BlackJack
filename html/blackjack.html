@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlackJack</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/blackjack.css">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Piedra&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="field">
+    <div class="play-area">
+      <div class="information dealer-name">Dealer</div>
+      <div class="bar dealer-bar" id="dealerBar">
+        <div class="card-border"></div>
+        <img class="card-pattern" id="dealer0" src="" alt="">
+        <div class="invisible-card" id="invisibleCard"></div>
+        <img class="card-pattern" id="dealer1" src="" alt="">
+      </div>
+      <h4 id="dealerTotalDisplay">0</h4>
+      <div class="game-title"> Black Jack</div>
+      <h2>BLACK JACK PAYS 3 TO 2</h2>
+      <h3>Dealer Must Draw to 16 andStand on 17</h3>
+      <h4 id="playerTotalDisplay">0</h4>
+      <div class="bar player-bar" id="playerBar">
+        <div class="card-border"></div>
+        <img class="card-pattern" id="player0" src="" alt="">
+        <img class="card-pattern" id="player1" src="" alt="">
+      </div>
+      <div class="player-info-bar" >
+        <div class="information palyer-name" >Player</div>
+        <div class="information money" id="betPriceDisplay">Bet : $0</div>
+        <div class="information money" id="leftMoneyDisplay">You Have : $1000</div>
+      </div>
+      <div class="bar btn-bar">
+        <button class="btn square-btn start-btn" id="start-btn" onclick="startGame()">Start</button>
+        <button class="btn square-btn stand-btn" id="stand-btn" onclick="stand()">Stand</button>
+        <button class="btn square-btn" id="hit-btn" onclick="hit()">Hit</button>
+        <button class="btn square-btn" id="double-btn" onclick="double()">Double</button>
+        <button class="btn square-btn retry-btn" id="retry-btn" onclick="retry()">Continue</button>
+        <button class="btn bet-btn bet5-btn" id="bet5-btn" onclick="bet(5)">5</button>
+        <button class="btn bet-btn bet25-btn" id="bet25-btn" onclick="bet(25)">25</button>
+        <button class="btn bet-btn bet100-btn" id="bet100-btn" onclick="bet(100)">100</button>
+      </div>
+    </div>
+    <button class="btn square-btn reset-btn" id="reset-btn" onclick="reload()">AllReset</button>
+  </div>
+  <h1 class="result-message" id="resultMessage"></h1>
+  <audio id="clickSound" preload="auto">
+    <source src="../audio/クリック.mp3" type="audio/mp3">
+    <source src="../audio/クリック.wav" type="audio/wav">
+  </audio>
+  <audio id="getMoney" preload="auto">
+    <source src="../audio/コインゲット.mp3" type="audio/mp3">
+    <source src="../audio/コインゲット.wav" type="audio/wav">
+  </audio>
+  <audio id="gameOver" preload="auto">
+    <source src="../audio/ゲームオーバー.mp3" type="audio/mp3">
+    <source src="../audio/ゲームオーバー.wav" type="audio/wav">
+  </audio>
+  <audio id="loseSound" preload="auto">
+    <source src="../audio/負け.mp3" type="audio/mp3">
+    <source src="../audio/負け.wav" type="audio/wav">
+  </audio>
+  <audio id="blackJackSound" preload="auto">
+    <source src="../audio/キラーン.mp3" type="audio/mp3">
+    <source src="../audio/キラーン.wav" type="audio/wav">
+  </audio>
+  <script type="text/javascript" src="../js/blackjack.js"></script>
+  </body>
+</html>

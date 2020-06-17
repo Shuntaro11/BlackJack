@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Odibee Sans', cursive;
+}
+.field{
+  background-color: rgb(24, 107, 60);
+  width: 85vw;
+  border-top: 10px solid rgb(0, 0, 0);
+  border-bottom: 10px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+}
+.play-area{
+  padding: 1vw 2vw;
+  width: 70vw;
+}
+.information{
+  width: 150px;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  border: 5px solid rgba(56, 56, 56, 0.226);
+  line-height: 40px;
+}
+.dealer-name{
+  margin-left: 10vw;
+  border: 5px solid rgb(56, 56, 56);
+  font-size: 30px;
+}
+.card-pattern{
+  width: 5vw;
+  height: 8vw;
+  border-radius: 3px;
+  margin-right: 1vw;
+}
+.player-info-bar{
+  display: flex;
+  margin-left: 10vw;
+}
+.palyer-name{
+  border: 5px solid rgb(126, 0, 0);
+  margin-right: 8.5vw;
+  font-size: 30px;
+}
+.money{
+  font-size: 20px;
+  margin-right: 2vw;
+}
+.bar{
+  margin: 10px 0 10px 10vw;
+  display: flex;
+  position: relative;
+}
+.btn-bar{
+  margin-left: 3vw;
+  margin-bottom: 0;
+}
+.card-border{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 5vw;
+  height: 8vw;
+  border: 3px solid rgba(255, 153, 0, 0.411);
+  border-radius: 3px;
+}
+.invisible-card{
+  position: absolute;
+  top: 0;
+  left: 6vw;
+  width: 5vw;
+  height: 8vw;
+  background-image: url(../images/cardsback.png);
+  background-size: 100% 100%;
+  opacity: 0;
+  border-radius: 3px;
+}
+#dealer1{
+  opacity: 0;
+}
+.btn{
+  border: none;
+  outline:0;
+  width: 150px;
+  line-height: 3vw;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #d8d066;
+  color: #837803;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #949562;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  height: 6vw;
+}
+.start-btn{
+  background: #d86666;
+  color: #8a1818;
+  border-bottom: solid 3px #956262;
+  display: block;
+  margin-left: 7vw;
+  width: 200px;
+  margin-right: 5vw;
+}
+.bet-btn{
+  display: block;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 6vw;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0;
+  margin-right: 3vw;
+}
+.bet5-btn{
+  border-top: 7px solid rgb(148, 19, 19);
+  border-bottom: 7px solid rgb(148, 19, 19);
+  border-right: 7px solid white;
+  border-left: 7px solid white;
+  background: #aa4c4c;
+  color: rgb(70, 0, 0);
+}
+.bet25-btn{
+  border-top: 7px solid rgb(27, 27, 129);
+  border-bottom: 7px solid rgb(27, 27, 129);
+  border-right: 7px solid white;
+  border-left: 7px solid white;
+  background: rgb(84, 84, 212);
+  color: rgb(0, 0, 70);
+}
+.bet100-btn{
+  border-top: 7px solid rgb(36, 36, 36);
+  border-bottom: 7px solid rgb(36, 36, 36);
+  border-right: 7px solid white;
+  border-left: 7px solid white;
+  background: #838383;
+  color: #353535;
+}
+.retry-btn{
+  background: #3f69c2;
+  color: #031955;
+  border-bottom: solid 3px #282e66;
+  display: none;
+  margin-left: 7vw;
+}
+.reset-btn{
+  display: block;
+  background: #58685d;
+  color: #1b271c;
+  border-bottom: solid 3px #29302b;
+  font-size: 30px;
+  position: absolute;
+  bottom: 1vw;
+  right: 2vw;
+}
+.stand-btn{
+  margin-left: 7vw;
+}
+.square-btn:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+.game-title{
+  font-size: 60px;
+  width: 500px;
+  color: rgba(243, 255, 174, 0.356);
+  margin-top: 2vw;
+  font-family: 'Piedra', cursive;
+  margin-left: 10vw;
+}
+h2{
+  color: rgba(255, 245, 102, 0.5);
+  font-family: 'Piedra', cursive;
+  margin-left: 10vw;
+}
+h3{
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2vw;
+  font-family: 'Piedra', cursive;
+  margin-left: 10vw;
+}
+h4{
+  margin-left: 10vw;
+  width: 5vw;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.301);
+  border-radius: 3px;
+  border: 1px solid white;
+}
+h1{
+  position: absolute;
+  top: 19vw;
+  left: 20vw;
+  color: rgb(255, 231, 151);
+  font-size: 120px;
+  font-family: 'Piedra', cursive;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
