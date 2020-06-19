@@ -1,6 +1,6 @@
 
 //カードのオモテ面のsrcの配列を定義
-var imgSrc = [];
+let imgSrc = [];
 for(var i = 1; i < 14; i++){
   if(i < 10){
     imgSrc.push("../images/d0" + i + ".png");
@@ -28,49 +28,49 @@ function randomArray(){
 randomArray();
 
 //所持金と掛け金
-var money = 1000;
-var betPrice = 0;
+let money = 1000;
+let betPrice = 0;
 
 // 所持金と掛け金を取得するための要素を取得
-var leftMoneyDisplay = document.getElementById("leftMoneyDisplay");
-var betPriceDisplay = document.getElementById("betPriceDisplay");
+const leftMoneyDisplay = document.getElementById("leftMoneyDisplay");
+const betPriceDisplay = document.getElementById("betPriceDisplay");
 
 //各プレイヤーに配られたカード番号を入れる配列
-var playerAllCard = [];
-var dealerAllCard = [];
+let playerAllCard = [];
+let dealerAllCard = [];
 
 //各プレイヤーのカードの合計値
-var playerTotalPoint = 0;
-var dealerTotalPoint = 0;
+let playerTotalPoint = 0;
+let dealerTotalPoint = 0;
 
 //自分が取得した２枚のカード情報を変数に代入
-var playerCard1 = imgSrc[1].substr(-6 , 2);
-var playerCard2 = imgSrc[3].substr(-6 , 2);
+let playerCard1 = imgSrc[1].substr(-6 , 2);
+let playerCard2 = imgSrc[3].substr(-6 , 2);
 
 //ディーラーが取得した２枚のカード情報を変数に代入
-var dealerCard1 = imgSrc[0].substr(-6 , 2);
-var dealerCard2 = imgSrc[2].substr(-6 , 2);
+let dealerCard1 = imgSrc[0].substr(-6 , 2);
+let dealerCard2 = imgSrc[2].substr(-6 , 2);
 
 //初めに各プレイヤーが取得するカードの数字を配列に入れる
 playerAllCard.push(playerCard1,playerCard2);
 dealerAllCard.push(dealerCard1);
 
 // 持っているカード枚数
-var howManyPlayerCards = 2;
-var howManyDealerCards = 2;
+let howManyPlayerCards = 2;
+let howManyDealerCards = 2;
 
 // 得点を表示するための要素を取得
-var playerTotalDisplay = document.getElementById("playerTotalDisplay");
-var dealerTotalDisplay = document.getElementById("dealerTotalDisplay");
+const playerTotalDisplay = document.getElementById("playerTotalDisplay");
+const dealerTotalDisplay = document.getElementById("dealerTotalDisplay");
 
 // ゲームが開始してから何枚目に配られたカードか
-var cardNumber = 0;
+let cardNumber = 0;
 
 // ゲーム結果を入れる変数
-var result = "";
+let result = "";
 
 // 結果を表示するための要素を取得
-var resultMessage = document.getElementById("resultMessage");
+const resultMessage = document.getElementById("resultMessage");
 
 
 // お金を賭ける関数(スタート画面でコインのボタンを押すと発火)
